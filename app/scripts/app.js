@@ -20,6 +20,36 @@ angular.module('nicolegager', ['ui.router'])
                             }
                         }
                     }
+                )
+                .state(
+                    'app.about', {
+                        url: 'about',
+                        views: {
+                            'content@': {
+                                templateUrl: 'views/about.html'
+                            }
+                        }
+                    }
+                )
+                .state(
+                    'app.resume', {
+                        url: 'resume',
+                        views: {
+                            'content@': {
+                                templateUrl: 'views/resume.html'
+                            }
+                        }
+                    }
+                )
+                .state(
+                    'app.portfolio', {
+                        url: 'portfolio',
+                        views: {
+                            'content@': {
+                                templateUrl: 'views/portfolio.html'
+                            }
+                        }
+                    }
                 );
             $urlRouterProvider.otherwise('/');
         }
