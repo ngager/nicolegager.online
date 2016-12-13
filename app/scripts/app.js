@@ -17,6 +17,9 @@ angular.module('nicolegager', ['ui.router'])
                             'content': {
                                 templateUrl: 'views/home.html',
                                 controller: 'IndexController'
+                            },
+                            'footer': {
+                                templateUrl: 'views/footer.html'
                             }
                         }
                     }
