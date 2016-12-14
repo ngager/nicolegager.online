@@ -19,13 +19,13 @@
 }
 
 .footer {
-    background: #fef7f8;
     position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
     margin-top: 100px;
     text-align: center;
+    min-height: 100px;
 }
 
 #social-fb:hover {
@@ -56,10 +56,10 @@
     margin: 0px auto;
     padding: 50px 0px;
     border-bottom: 1px ridge;
-    min-height: 300px;
+    min-height: 200px;
 }
 .row-footer {
     margin: 0px auto;
-    padding: 20px 0px;
-    background-color: #AfAfAf;
+    padding: 10px 0px;
+    background-color: #fef7f8;
 }
