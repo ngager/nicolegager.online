@@ -3,8 +3,8 @@
  */
 'use strict';
 angular.module('nicolegager')
-    .controller('IndexController', ['$scope', function ($scope, $sce) {
+    .controller('IndexController', ['$scope', function ($scope) {
         //TODO: implement controller
-        $scope.image = $sce.trustAsResourceUrl('../img/ng.png');
+        $scope.avatar = '/nicolegager.online/app/img/avatar.JPG';
     }])
 ;
