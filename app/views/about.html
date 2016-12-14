@@ -1,34 +1,74 @@
-<div ng-controller="IndexController">
-    <span style="padding:20px"></span>
-    <!-- Hobbies & Interests -->
-    <div id="hobbies" class="row row-content">
-        <div class="col-sm-12">
-            <img class="col-sm-2" width="300" ng-src={{avatar}}>
-            <div class="col-sm-2"><h3>Hobbies & Interests</h3></div>
-            <div class="col-sm-3">
-                <span style="padding:10px"></span>
-                <ul>
-                    <li>Hiking</li>
-                    <li>Traveling</li>
-                    <li>Kayaking</li>
-                    <li>Running / Spinning</li>
-                    <li>Barre Fitness</li>
-                    <li>New Experiences / Adventures</li>
-                    <li>Organization / Color Coding</li>
-                </ul>
+<div class="container-fluid" ng-controller="IndexController">
+    <div class="col-sm-3">
+        <span style="padding:150px"></span>
+        <img width="300" ng-src={{avatar}}>
+    </div>
+    <div class="col-sm-9">
+        <!-- About -->
+        <div id="about" class="row row-content">
+            <div class="col-sm-8"><h3>About Me</h3>
+                <div class="col-sm-6">
+                    <span style="padding:10px"></span>
+                    <ul class="list-unstyled">
+                        <li><strong>Name:</strong> Nicole Gager</li>
+                        <li><strong>Age:</strong> 24</li>
+                        <li><strong>Hometown:</strong> Hudson, NH</li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-3">
-                <span style="padding:10px"></span>
-                <ul>
-                    <li>Spreadsheets</li>
-                    <li>Reading</li>
-                    <li>Concerts / Live Music</li>
-                    <li>Crafts / Painting / DIY</li>
-                    <li>Style / Fashion</li>
-                    <li>Designing</li>
-                    <li>Cooking</li>
-                </ul>
+        </div>
+        <!-- Hobbies & Interests -->
+        <div id="hobbies" class="row row-content">
+            <div class="col-sm-8"><h3>Hobbies & Interests</h3>
+                <div class="col-sm-6">
+                    <span style="padding:10px"></span>
+                    <ul>
+                        <li>Hiking / Kayaking</li>
+                        <li>Traveling</li>
+                        <li>Running / Spinning / Barre Fitness</li>
+                        <li>New Experiences / Adventures</li>
+                        <li>Organization / Color Coding</li>
+                        <li>Creating Spreadsheets</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <span style="padding:10px"></span>
+                    <ul>
+                        <li>Reading</li>
+                        <li>Concerts / Live Music</li>
+                        <li>Crafts / Painting / DIY</li>
+                        <li>Style / Fashion</li>
+                        <li>Designing</li>
+                        <li>Cooking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Travel -->
+        <div id="travel" class="row row-content">
+            <div class="col-sm-8">
+                <h3>Travel</h3>
+                <div class="col-sm-6">
+                    <span style="padding:10px"></span>
+                    <ul class="list-unstyled">
+                        <h4>Nepal 2015</h4>
+                        <div class= "row row-content" id="links">
+                            <div class= "col-sm-12">
+                            <a href="/nicolegager.online/app//img/nepal/nepal1.jpg" title="Banana" data-dialog>
+                                <img class="img-thumbnail img-responsive" src="/nicolegager.online/app//img/nepal/nepal1.jpg" alt="Banana">
+                            </a>
+                            <a href="../img/nepal/nepal2.jpg" title="Apple" data-dialog>
+                                <img class="img-thumbnail img-responsive" src="/nicolegager.online/app//img/nepal/nepal2.jpg"  alt="Apple">
+                            </a>
+                            <a href="../img/nepal/nepal3.jpg" title="Orange" data-dialog>
+                                <img class="img-thumbnail img-responsive" src="/nicolegager.online/app//img/nepal/nepal3.jpg"  alt="Orange">
+                            </a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <span style="padding: 200px"></span>
 </div>
