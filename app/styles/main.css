@@ -20,11 +20,11 @@
 
 .footer {
     background: #fef7f8;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 1rem;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -48,7 +48,18 @@
     color: #f39c12;
 }
 
-.col-centered{
-    float: none;
-    margin: 0 auto;
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 300px;
+}
+.row-footer {
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: #AfAfAf;
 }
