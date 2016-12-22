@@ -61,3 +61,8 @@
     min-height: 100px;
     width: 100%;
 }
+
+.image-gallery {
+    display: inline;
+    float: left;
+}

@@ -1,4 +1,4 @@
-<div class="container" ng-controller="IndexController">
+<div class="container-fluid" ng-controller="IndexController">
     <div class="row row-header">
         <span style="padding: 20px"></span>
     </div>
@@ -45,26 +45,26 @@
         </div>
         <!-- Travel -->
         <div id="travel" class="row row-content">
-            <div class="col-sm-8">
+            <div class="col-sm-12">
                 <h3>Travel</h3>
-                <div class="col-sm-6">
+                <div class="col-sm-12">
                     <span style="padding:10px"></span>
-                    <ul class="list-unstyled">
-                        <h4>Nepal 2015</h4>
-                        <div class= "row row-content" id="links">
-                            <div class= "col-sm-12">
-                            <a href="../img/nepal/NEPAL_1.jpeg" title="Banana" data-dialog>
-                                <img class="img-thumbnail img-responsive" src="../img/nepal/NEPAL_1.jpeg" alt="Banana">
-                            </a>
-                            <a href="../img/nepal/NEPAL_2.jpeg" title="Apple" data-dialog>
-                                <img class="img-thumbnail img-responsive" src="../img/nepal/NEPAL_2.jpeg"  alt="Apple">
-                            </a>
-                            <a href="../img/nepal/NEPAL_3.jpeg" title="Orange" data-dialog>
-                                <img class="img-thumbnail img-responsive" src="../img/nepal/NEPAL_3.jpeg"  alt="Orange">
-                            </a>
-                            </div>
-                        </div>
-                    </ul>
+                    <h4>Nepal 2015</h4>
+                    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                        <div class="slides"></div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="close">×</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator"></ol>
+                    </div>
+                    <div id="links" class="image-gallery" ng-repeat="media in getNepalImages()">
+                        <a ng-href="{{media.src}}">
+                            <img  width="250" ng-src="{{media.src}}">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
