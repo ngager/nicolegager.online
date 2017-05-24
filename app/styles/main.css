@@ -1,5 +1,5 @@
 .jumbotron {
-    padding:70px 30px 70px 30px;
+    padding:30px 30px 30px 30px;
     margin:0 auto;
     background: #a89ec2;
     color: floralwhite;
@@ -62,9 +62,4 @@
     text-align: center;
     min-height: 100px;
     width: 100%;
-}
-
-.image-gallery {
-    display: inline;
-    float: left;
 }
