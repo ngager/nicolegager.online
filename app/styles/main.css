@@ -1,7 +1,7 @@
 .jumbotron {
     padding:30px 30px 30px 30px;
     margin:0 auto;
-    background: #a89ec2;
+    background: #23003d;
     color: floralwhite;
 }
 
@@ -54,7 +54,7 @@
 .row-footer {
     margin: 0px auto;
     padding-top: 25px;
-    background-color: #fef7f8;
+    background-color: #271a34;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -62,19 +62,57 @@
     text-align: center;
     min-height: 100px;
     width: 100%;
+    color: floralwhite;
 }
 
-.navbar-header {
-    width: 100%;
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
+
+
+
+/* Adjust Menu colors - Hover */
+.navbar .nav > li > a:hover, .navbar .nav > li > a:hover:first-letter {
+    color: #271a34;
+}
+
+/* Adjust Menu colors - Normal */
+.navbar .nav > li > a, .navbar .nav > li {
+    color: #fbf6ff;
+}
+
+/* Adjust Menu colors - Active */
+.navbar .nav > li > a:active, .navbar .nav > li > a:active:first-letter,
+.navbar .nav > li.current-menu-item > a,
+.navbar .nav > li.current-menu-ancestor > a,
+.navbar .nav > li.current-menu-item > a:first-letter,
+.navbar .nav > li.current-menu-ancestor > a:first-letter {
+    color: #271a34;
+    text-shadow: none;
+
+}
+
+.navbar .nav > li.current-menu-item > a, .navbar .nav > li.current-menu-ancestor > a,
+.navbar .nav > li > a:hover, .navbar .nav > li > a:focus {
+    color: #5A5A5A;
 }
 
 .navbar {
     width: 100%;
     position: relative;
-    margin: 0;
     border: 0;
-
+    background: #271a34;
 }
+
+.navbar-header {
+    width: 100%;
+    float: right;
+}
+
 
 .body {
     width: 100%;
