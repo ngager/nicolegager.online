@@ -64,6 +64,16 @@ angular.module('nicolegager', ['ui.router'])
                             }
                         }
                     }
+                )
+                .state(
+                    'app.contact', {
+                        url: 'contact',
+                        views: {
+                            'content@': {
+                                templateUrl: 'views/contact.html'
+                            }
+                        }
+                    }
                 );
             $urlRouterProvider.otherwise('/');
         }
