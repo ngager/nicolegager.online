@@ -43,6 +43,10 @@
     padding: 0px 0px;
 }
 
+.row {
+    padding: 10px 10px 10px 10px;
+    min-height: 30px;
+}
 
 .row-content {
     margin: 0px auto;
