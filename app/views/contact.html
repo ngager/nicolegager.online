@@ -1,27 +1,39 @@
-<div class="container">
-
+<div class="container" ng-controller="ContactController">
     <div class="row">
-        If you would like to contact me, please feel free to send me a message! I would love to connect with you!
+        <div class="col-xs-4">
+            <h1>Let's Connect!</h1>
+            If you would like to contact me, please feel free to send me a message! I would love to connect with you!
+        </div>
+        <div class="col-xs-8 form-content" ng-controller="FormController">
+            <form class="form-horizontal" name="contactForm" role="form" ng-submit="sendFeedback()" novalidate>
+                <div class="form-group">
+                    <label for="firstname">Name*</label>
+                    <div class="row">
+                        <div class="col-xs-6" ng-class="{'has-error' : (contactForm.firstname.$error.required && !contactForm.firstname.$pristine)}">
+                            <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="firstname" placeholder="First Name" ng-model="feedback.firstName" required>
+                            <span ng-show="contactForm.firstname.$error.required && !contactForm.firstname.$pristine" class="help-block">Your First Name is required.</span>
+                        </div>
+                        <div class="col-xs-6" ng-class="{'has-error' : (contactForm.lastname.$error.required && !contactForm.lastname.$pristine)}">
+                            <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="lastname" placeholder="Last Name" ng-model="feedback.lastName" required>
+                            <span ng-show="contactForm.lastname.$error.required && !contactForm.lastname.$pristine" class="help-block">Your Last Name is required.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" type="text" class="form-control" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachment">Attachment</label>
+                    <input type="file" class="form-control-file" id="attachment" name="attachment" aria-describedby="fileHelp">
+                    <small id="fileHelp" class="form-text text-muted">Upload a file to attach to your message.</small>
+                </div>
+                <button type="submit" class="btn btn-primary" name="submit" ng-disabled="contactForm.$invalid">Submit</button>
+            </form>
+        </div>
     </div>
-    <form>
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-            <label for="emailAddress">Email</label>
-            <input name="email" type="text" class="form-control" id="emailAddress" placeholder="Email">
-        </div>
-        <div class="form-group">
-            <label for="message">Your message</label>
-            <textarea class="form-control" id="message" rows="5"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="attachment">Attachment</label>
-            <input type="file" class="form-control-file" id="attachment" aria-describedby="fileHelp">
-            <small id="fileHelp" class="form-text text-muted">Upload a file to attach to your message.</small>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div>
 </div>

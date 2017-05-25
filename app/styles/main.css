@@ -38,19 +38,25 @@
     color: #f39c12;
 }
 
+.form-content {
+    padding: 30px 40px 30px 40px;
+}
+
 .row-header {
     margin: 0px auto;
     padding: 0px 0px;
 }
 
+
 .row {
-    padding: 10px 10px 10px 10px;
     min-height: 30px;
 }
+
 
 .row-content {
     margin: 0px auto;
     padding-bottom: 40px;
+    padding-top: 10px;
     border-bottom: 1px ridge;
     min-height: 70px;
 }
