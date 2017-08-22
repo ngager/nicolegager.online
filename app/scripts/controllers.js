@@ -10,6 +10,7 @@ angular.module('nicolegager')
 
         $scope.feedback = {firstName: "", lastName: ""};
         $scope.invalidChannelSelection = false;
+        $scope.nicoleImage = '/nicolegager.online/app/img/nicole.jpg';
 
     }])
     .controller('FormController', ['$scope', function ($scope) {

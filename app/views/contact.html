@@ -1,11 +1,15 @@
 <div class="container" ng-controller="ContactController">
     <div class="row">
+
         <div class="col-xs-4">
             <h1>Let's Connect!</h1>
             If you would like to contact me, please feel free to send me a message! I would love to connect with you!
+            <hr>
+            <img width="350" ng-src={{nicoleImage}}>
         </div>
+
         <div class="col-xs-8 form-content" ng-controller="FormController">
-            <form class="form-horizontal" name="contactForm" role="form" ng-submit="sendFeedback()" novalidate>
+            <form class="form-horizontal" name="contactForm" role="form" action="mailto:ngager23@gmail.com" method="post" enctype="text/plain" novalidate>
                 <div class="form-group">
                     <label for="firstname">Name*</label>
                     <div class="row">
