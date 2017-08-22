@@ -1,8 +1,8 @@
 .jumbotron {
     padding:30px 30px 30px 30px;
     margin:0 auto;
-    background: #23003d;
-    color: floralwhite;
+    background: #5ec9cf;
+    color: #e2ffef;
 }
 
 .text-vertical-center {
@@ -64,7 +64,7 @@
 .row-footer {
     margin: 0px auto;
     padding-top: 25px;
-    background-color: #271a34;
+    background-color: #5ec9cf;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -115,7 +115,7 @@
     width: 100%;
     position: relative;
     border: 0;
-    background: #271a34;
+    background:  lighten(@gray-light, 15%);
 }
 
 .navbar-header {
